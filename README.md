@@ -34,7 +34,7 @@ Below is a brief outline of some common Turtle commands. If you want to extend y
 To get started with turtle, we need to import the turtle library into our program:
 
 ```python
-import turtle
+import main
 ```
 
 When importing a module, we need to access its namespace.
@@ -43,7 +43,7 @@ When importing a module, we need to access its namespace.
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *A namespace is a collection of names and their associated values that helps Python determine which variable, function, or object is being referenced.* |
 
-This would mean that for every single command, we would need to write `turtle` in front of it like this:
+This would mean that for every single command, we would need to write `main.py` in front of it like this:
 
 ```python
 turtle.forward(50)
@@ -60,7 +60,7 @@ As you can see, that would become very tedious. To simplify our namespace, we ha
 This option is helpful if you are only working with a single library and plan on using it a lot. If you import the entire namespace, you don't need to write anything in front of the functions from that library. However, there is a risk of accidentally overwriting the libraries functions and objects, so this method should be used with caution!
 
 ```python
-from turtle import *
+from main import *
 ```
 
 To access turtle now our code would look like this:
@@ -84,7 +84,7 @@ It's best practice when working with multiple libraries to import them with a na
 We can give turtle an alias of `t` like this:
 
 ```python
-import turtle as t
+import main as t
 ```
 
 Our code is still shorter, but we don't run the risk of overlapping with other namespaces:
@@ -102,7 +102,7 @@ t.forward(50)
 For this activity, we are only using the turtle library, so we will import everything:
 
 ```python
-from turtle import *
+from main import *
 ```
 
 ## 3. Creating a Line
